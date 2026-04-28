@@ -1,0 +1,13 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/candidates",
+      "mountPath": "/api/candidates",
+      "method": "",
+      "module": [
+        "api/candidates/index.js:onRequest"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}

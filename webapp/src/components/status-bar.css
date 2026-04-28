@@ -1,0 +1,48 @@
+.statusbar {
+  @apply w-full;
+}
+
+.statusbar__grid {
+  @apply grid grid-cols-1 gap-6 md:grid-cols-3;
+}
+
+.statusbar__card {
+  @apply bg-[#1e293b] rounded-2xl border border-white/10 flex flex-col space-y-[0.41rem] p-[1.13rem_1.5rem] shadow-xl shadow-black/30;
+}
+
+
+.statusbar__header {
+  @apply flex items-center justify-between;
+}
+
+.statusbar__label {
+  @apply text-xs font-bold uppercase tracking-[0.1em] text-[#94a3b8] leading-[1.32] m-0;
+}
+
+.statusbar__icon {
+  @apply text-[24px] leading-none;
+}
+
+.statusbar__icon--pending {
+  @apply text-orange-400;
+}
+
+.statusbar__icon--approved {
+  @apply text-emerald-400;
+}
+
+.statusbar__icon--rejected {
+  @apply text-rose-500;
+}
+
+.statusbar__metric {
+  @apply flex items-baseline gap-[0.44rem];
+}
+
+.statusbar__number {
+  @apply text-[2.25rem] font-bold text-white m-0 leading-none;
+}
+
+.statusbar__hint {
+  @apply text-sm text-slate-500 m-0;
+}

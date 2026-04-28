@@ -1,0 +1,172 @@
+/* Navigation-bar-styling */
+.nav-bar {
+  @apply sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-xl shadow-[0_1px_0_rgb(148_163_184_/0.06)] px-6 py-4;
+}
+
+.nav-bar h1 {
+  @apply text-xl font-bold tracking-tight text-white uppercase;
+}
+
+/* Search-bar-styling */
+.search-bar {
+  @apply relative w-full;
+}
+
+.search-input {
+  @apply w-full pl-11 pr-4 py-2.5 bg-[var(--bg-input)] border border-slate-700/50 rounded-xl text-sm text-[#eaf1ff] placeholder-slate-500 focus:ring-2 focus:ring-sky-500/40 focus:outline-none;
+}
+
+.input-icon {
+  @apply absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 transition-colors;
+}
+
+.group:focus-within .input-icon {
+  @apply text-sky-400;
+}
+
+/* Candidate-card-styling */
+.candidate-card {
+  @apply bg-[#1b2a41] border border-white/10 rounded-2xl shadow-2xl overflow-hidden mb-6 w-full;
+}
+
+.candidate-content {
+  @apply flex-1 p-6 grid grid-cols-1 lg:grid-cols-2 gap-8;
+}
+
+.candidate-card__header {
+  @apply px-6 py-4 border-b border-white/5 bg-[#162235] flex justify-between items-center;
+}
+
+.candidate-avatar {
+  @apply h-10 w-10 rounded-full bg-[#24385a] flex items-center justify-center font-bold text-[#eaf1ff] border border-white/10;
+}
+
+.candidate-name {
+  @apply text-lg font-bold text-[#eaf1ff] leading-none;
+}
+
+.candidate-id {
+  @apply text-[10px] font-mono text-[#9fb3d9] uppercase mt-1;
+}
+
+.candidate-applied {
+  @apply text-[10px] text-[#9fb3d9];
+}
+
+.candidate-note {
+  @apply flex flex-col;
+}
+
+.candidate-score-col {
+  @apply text-sm w-full md:w-32 border-r border-white/5 bg-[#162235] flex flex-col items-center py-6 gap-4;
+}
+
+.score-circle {
+  @apply w-16 h-16 rounded-full border-4 border-[#ff9f43] flex items-center justify-center text-[#eaf1ff] font-bold text-xl;
+  box-shadow: 0 0 18px rgba(255, 159, 67, 0.25);
+}
+
+.score-label {
+  @apply text-[9px] uppercase font-bold tracking-widest text-[#7d93bf];
+}
+
+.cv-button__label {
+  @apply text-[9px] font-medium tracking-wide text-[#9fb3d9];
+}
+
+.cv-button {
+  @apply flex flex-col items-center gap-1 text-[#9fb3d9] hover:text-[#38bdf8];
+}
+
+.cv-button span:first-child {
+  @apply w-10 h-10 rounded-xl bg-[#0b1324] flex items-center justify-center border border-white/10;
+}
+
+.section-title {
+  @apply text-[10px] font-bold uppercase tracking-widest text-[#7d93bf] mb-3 flex items-center gap-2;
+}
+
+.section-title--strength {
+  @apply text-[#38bdf8];
+}
+
+.section-title--weak {
+  @apply text-[#ff9f43];
+}
+
+.section-text {
+  @apply text-xs leading-relaxed text-[#eaf1ff];
+}
+
+.list {
+  @apply text-xs space-y-2 text-[#9fb3d9];
+}
+
+.list li {
+  @apply flex items-start gap-2;
+}
+
+.list span {
+  @apply text-[#38bdf8] text-[18px];
+}
+
+.list--weak span {
+  @apply text-[#ff9f43];
+}
+
+.candidate-note textarea {
+  @apply text-xs w-full h-full p-4 bg-[#0b1324] border border-white/10 rounded-xl text-[#eaf1ff] resize-none focus:ring-1 focus:ring-[#38bdf8]/50 outline-none flex-1;
+}
+
+.candidate-footer {
+  @apply px-6 py-3 border-t border-white/5 bg-[#162235] flex flex-wrap gap-2;
+}
+
+.footer-tag {
+  @apply px-3 py-1 rounded-md text-[10px] font-bold bg-white/5 border border-white/10 text-[#9fb3d9];
+}
+
+.badge {
+  @apply px-3 py-1 rounded-full text-[10px] font-bold tracking-wider border;
+}
+
+.badge--orange {
+  @apply bg-[#ff9f43]/10 border-[#ff9f43]/30 text-[#ff9f43];
+}
+
+.badge--blue {
+  @apply bg-[#38bdf8]/10 border-[#38bdf8]/30 text-[#38bdf8];
+}
+
+.badge--green {
+  @apply bg-[#22c55e]/10 border-[#22c55e]/30 text-[#22c55e];
+}
+
+.badge--red {
+  @apply bg-[#ef4444]/10 border-[#ef4444]/30 text-[#ef4444];
+}
+
+/*Candidate-list-render*/
+.view-detail {
+  @apply p-2 hover:bg-slate-700/50 rounded-lg text-slate-400 hover:text-white transition-colors;
+}
+
+.detailed-information .section-title {
+  @apply text-[10px] font-bold uppercase tracking-widest text-[#7d93bf] mb-3 flex items-center gap-2;
+}
+
+.detailed-information .material-symbols-outlined {
+  @apply mt-[2px] text-[16px] text-[#7d93bf];
+}
+
+.detailed-information .detail-label {
+  @apply font-semibold text-[#9bb2e6];
+}
+
+.detailed-information .detail-value {
+  @apply text-[#eaf1ff]/90;
+}
+
+.return-button {
+  @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 bg-white/5 border border-slate-700/40 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-500/30 transition-all
+}
